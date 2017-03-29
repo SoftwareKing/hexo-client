@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "万智渝, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2016
 
 # icon between year and author @Footer
 authoricon: heart
@@ -22,14 +22,13 @@ authoricon: heart
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
 
-
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -38,10 +37,11 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
   archives: /archives
   tags: /tags
+  about: /about
+  guestbook: /guestbook
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -57,6 +57,7 @@ menu_icons:
   home: home
   about: user
   categories: th
+  guestbook: book
   schedule: calendar
   tags: tags
   archives: archive
@@ -133,8 +134,12 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+  GitHub: https://github.com/wanzhiyu
+  微博: http://weibo.com/5316199945
+  豆瓣: http://douban.com/people/135209551
+  知乎: http://www.zhihu.com/people/wan-zhi-yu-16
 
 
 # Social Links Icons
@@ -143,18 +148,19 @@ font:
 #   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 social_icons:
-  enable: true
+  enable: false
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  #GitHub: github
+  #微博: weibo
+  #豆瓣: douban
+  #知乎: zhihu
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/pic_admin.png
 
 
 # Table Of Contents in the Sidebar
@@ -162,13 +168,13 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  number: false
 
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 
@@ -199,11 +205,13 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
+links_title: 友情链接
 #links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_layout: inline
+links:
+  Doublemine: https://notes.wanghao.work/
+  ARAO: http://www.arao.me/
+  YangZiHao: http://www.cduyzh.com/
 
 
 # ---------------------------------------------------------------
@@ -233,8 +241,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -244,9 +252,9 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  enable: true
+  license: CC BY-NC-SA 3.0 CN
+  license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/cn/
 
 
 
@@ -277,8 +285,8 @@ highlight_theme: normal
 
 # MathJax Support
 mathjax:
-  enable: false
-  per_page: false
+  enable: true
+  per_page: true
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
@@ -286,10 +294,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 2d34cd1e38f833c0602fe976ed6cd59e
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+#duoshuo_shortname: wanzhiyu
 
 # Disqus
 disqus:
@@ -311,11 +319,11 @@ changyan:
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
+#youyan_uid: 2128942
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8yNzQ3NC80MDU0
 
 # Baidu Share
 # Available value:
@@ -337,7 +345,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-90938432-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -353,12 +361,13 @@ changyan:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: true
+#  user_id: 6307063451265009000
+#  admin_nickname: 博主
 
+#duoshuo_hotartical: true
 
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
@@ -391,25 +400,25 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 7LLA5gs13yTnPiyQkC9ktQ1q-gzGzoHsz
+  app_key: po4CVH0M7uw8nxU2tpYndhgn
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: <i class="fa fa-user"> 本站访客数</i>
+  site_uv_footer: 人
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: <i class="fa fa-eye"> 本站总访问量</i>
+  site_pv_footer: 次
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
@@ -422,7 +431,12 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
+
+# Donate 文章末尾显示打赏按钮
+reward_comment: 「真诚赞赏，手留余香」
+wechatpay: http://oj9456ckj.bkt.clouddn.com/image/Money/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E6%94%B6%E6%AC%BE.png
+alipay: http://oj9456ckj.bkt.clouddn.com/image/Money/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE.jpg
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -454,7 +468,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
@@ -476,9 +490,6 @@ fancybox: true
 # Canvas-nest
 canvas_nest: false
 
-#three_waves
-three_waves: false
-
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
 # For example
@@ -490,37 +501,40 @@ vendors:
   _internal: lib
 
   # Internal version: 2.1.3
-  jquery:
+#  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
+  jquery: https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js
 
   # Internal version: 2.1.5
-  # See: http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  # Fancybox: http://fancyapps.com/fancybox/
+#  fancybox: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js
+  fancybox: https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.pack.js
+#  fancybox_css: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css
+  fancybox_css: https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
-  # See: https://github.com/ftlabs/fastclick
-  fastclick:
+#  fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
+  fastclick: https://cdn.staticfile.org/fastclick/1.0.6/fastclick.min.js
 
   # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
-  velocity:
+#  velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
+  velocity: https://cdn.staticfile.org/velocity/1.4.1/velocity.min.js
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
-  velocity_ui:
+#  velocity_ui: //cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js
+  velocity_ui: https://cdn.staticfile.org/velocity/1.4.1/velocity.ui.min.js
 
   # Internal version: 0.7.9
-  # See: https://faisalman.github.io/ua-parser-js/
-  ua_parser:
+#  ua_parser: //cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js
+  ua_parser: https://cdn.staticfile.org/UAParser.js/0.7.12/ua-parser.min.js
 
   # Internal version: 4.6.2
-  # See: http://fontawesome.io/
-  fontawesome:
-
+  # http://fontawesome.io/
+#  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
+  fontawesome: https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
+  
   # Internal version: 1
   # https://www.algolia.com
   algolia_instant_js:
@@ -529,10 +543,6 @@ vendors:
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
-  
-  #three
-  three:
-  three_waves:
 
 
 
