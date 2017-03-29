@@ -112,7 +112,7 @@ https://helpx.adobe.com/cn/acrobat/kb/acrobat-downloads.html
 
    ![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/31.png)
 
-9. 脱机激活后**在hosts文件里添加：
+9. **脱机激活后**在hosts文件里添加：
 
    ```
    127.0.0.1 lmlicenses.wip4.adobe.com
@@ -134,9 +134,11 @@ https://helpx.adobe.com/cn/acrobat/kb/acrobat-downloads.html
    127.0.0.1 wwis-dubc1-vip60.adobe.com
    ```
 
+   ![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/32.png)
 
-![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/32.png)
+   ![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/33.png)
 
-![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/33.png)
+10. 将amtlib.dll文件粘贴到安装文件夹，覆盖后即可。
+
 
 以上工作保存完成后，这时才可以联网。
