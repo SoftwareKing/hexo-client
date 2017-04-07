@@ -13,14 +13,14 @@ categories:
 
 # 第一个版本
 
-![1](http://www.ccguitar.cn/pu/2012/8/18/201852_62716/1.gif)
+![1](http://oj9456ckj.bkt.clouddn.com/image/Guitar_Tablatures/%E8%80%81%E9%BC%A0%E7%88%B1%E5%A4%A7%E7%B1%B31-1.jpg)
 
 <!--more-->
 
-![](http://www.ccguitar.cn/pu/2012/8/18/201852_62716/2.gif)
+![](http://oj9456ckj.bkt.clouddn.com/image/Guitar_Tablatures/%E8%80%81%E9%BC%A0%E7%88%B1%E5%A4%A7%E7%B1%B31-2.jpg)
 
 # 第二个版本
 
-![](http://www.ccguitar.cn/pu/2010/3/23/129137949063852500/1.gif)
+![](http://oj9456ckj.bkt.clouddn.com/image/Guitar_Tablatures/%E8%80%81%E9%BC%A0%E7%88%B1%E5%A4%A7%E7%B1%B32-1.jpg)
 
-![](http://www.ccguitar.cn/pu/2010/3/23/129137949063852500/2.gif)
+![](http://oj9456ckj.bkt.clouddn.com/image/Guitar_Tablatures/%E8%80%81%E9%BC%A0%E7%88%B1%E5%A4%A7%E7%B1%B32-2.jpg)
