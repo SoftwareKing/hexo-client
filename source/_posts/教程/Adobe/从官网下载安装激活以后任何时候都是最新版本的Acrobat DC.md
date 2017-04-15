@@ -138,7 +138,23 @@ https://helpx.adobe.com/cn/acrobat/kb/acrobat-downloads.html
 
    ![](http://oj9456ckj.bkt.clouddn.com/image/AdobeDCSetup/33.png)
 
-10. 将amtlib.dll文件粘贴到安装文件夹，覆盖后即可。
+10. 联网，运行软件，进行相关设置。
+
+   编辑——首选项——一般，取消勾选“启动Adobe Acrobat DC时向我显示消息”
+
+   编辑——首选项——更新程序，取消勾选“自动安装更新”
+
+11. 清理开机启动项：
+
+    去注册表HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run下删除
+
+    Acrobat Assistant 8.0
+
+    AdobeAAMUpdater-1.0
+
+12. “服务”里停止Adobe Acrobat Update Service，并将其启动类型设置为“手动”
+
+13. 将amtlib.dll文件粘贴到安装文件夹，覆盖后即可。
 
 
 以上工作保存完成后，这时才可以联网。
