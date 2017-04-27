@@ -213,6 +213,7 @@ links:
   ARAO: http://www.arao.me/
   YangZiHao: http://www.cduyzh.com/
   刘百川: https://liubaichuan.github.io
+  浚宇的博客: http://blog.junyu.io/
 
 
 # ---------------------------------------------------------------
@@ -310,13 +311,13 @@ disqus:
 #hypercomments_id:
 
 # Gentie productKey
-#gentie_productKey:
+#gentie_productKey: 8ade78cb410b4e8ebc0b07e98ac7cf53
 
 # changyan
 changyan:
   enable: false
-  appid:
-  appkey:
+  appid: cysXH5VXL
+  appkey: 555d5c727a01c12b4b7a8968cc37eb1a
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
