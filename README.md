@@ -26,7 +26,7 @@ Personal Blog Files
 7. 直接部署：
 
    ```
-   hexo clean;hexo g -d
+   hexo clean;hexo g;hexo d
    ```
    ​
 
@@ -66,7 +66,7 @@ Personal Blog Files
   ```
   npm install hexo-generator-sitemap --save;npm install hexo-generator-baidu-sitemap --save;npm install hexo-wordcount --save;npm install hexo-generator-searchdb --save;npm install hexo-wordcount --save;
 
-  hexo clean;hexo g -d
+  hexo clean;hexo g;hexo d
   ```
 
    **下次Clone到本地时，记得主题Next已经全盘同步到本地了，不要安装Next主题了，直接在站点配置文件里面添加就行。**
