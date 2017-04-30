@@ -4,7 +4,7 @@ date: 2017-01-02 21:12:54
 type: "guestbook"
 ---
 
-<p><blockquote class="blockquote-center">**来都来了，陪我讲句话再走好不好~**<br/>(●'◡'●)</blockquote></p>
+<p><blockquote class="blockquote-center"><b>念念不忘，必有回响</b></blockquote></p>
 
 ---
 
