@@ -121,9 +121,9 @@ win10下必须右键用管理员身份打开，否则会报错，Error5：拒绝
 
 10. 如果你的也是这样子出错了的话，就输入以下指令：
 
-   ```
-   eval  `ssh-agent -s`
-   ```
+  ```
+  eval  `ssh-agent -s`
+  ```
 
 11.   重新执行刚才那条命令：
 
@@ -347,4 +347,6 @@ win10下必须右键用管理员身份打开，否则会报错，Error5：拒绝
 
    你会看到成功啦！![](http://oj9456ckj.bkt.clouddn.com/image/hexo_install/github%E4%B8%8A%E5%BB%BA%E7%AB%99/4.png)
 
-   ​
+   # 10. 后续美化
+
+   见：http://blog.alanice.cn/2017/05/03/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B-%E5%85%B6%E4%BB%96/
