@@ -7,6 +7,7 @@ tags:
 categories:
 - 教程
 - MATLAB
+mathjax: true
 ---
 
 例如问：如何使用MALTAB产生分布在区间 [0.2, 0.95] 服从正态分布$N(0.5, 0.4^2) $的1000个数据，以列向量表示。

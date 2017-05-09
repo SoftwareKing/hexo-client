@@ -7,6 +7,7 @@ tags:
 categories:
 - 教程
 - MATLAB
+mathjax: true
 ---
 
 $hist()$是绘制直方图函数
